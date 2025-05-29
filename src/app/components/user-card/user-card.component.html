@@ -1,0 +1,7 @@
+<div class="card">
+            <img [src]="user.photo" alt="User photo" width="100">
+            <h3>{{ user.name | uppercase }}</h3>
+            <p>Email: {{ user.email }}</p>
+            <p>Joined: {{ user.joined | date: 'mediumDate' }}</p>
+          </div>
+          

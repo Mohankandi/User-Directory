@@ -1,0 +1,12 @@
+<h2>User Directory</h2>
+
+<!-- Two-way binding filter -->
+<input [(ngModel)]="filterText" placeholder="Search users..." />
+
+<!-- *ngIf conditional rendering -->
+<p *ngIf="filteredUsers.length === 0">No users found.</p>
+
+<!-- Loop through filtered users -->
+<div *ngFor="let user of filteredUsers">
+  <app-user-card [user]="user"></app-user-card>
+</div>
