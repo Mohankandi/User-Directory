@@ -104,6 +104,17 @@
             ],
             "scripts": []
           }
+        },
+        "e2e": {
+          "builder": "playwright-ng-schematics:playwright",
+          "options": {
+            "devServerTarget": "user-directory:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "user-directory:serve:production"
+            }
+          }
         }
       }
     }
